@@ -30,6 +30,10 @@
   tapping-term-ms = <170>;
 };
 
+&lt {
+  quick-tap-ms = <100>;
+};
+
 / {
      combos {
             compatible = "zmk,combos";
@@ -79,9 +83,9 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &mt LGUI Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Y       &kp LS(COMMA)
-                &mt LCTRL A  &mt LALT R  &mt LGUI S &mt LSHFT T &kp G           &kp H       &mt RSHFT N &mt RGUI E &mt RALT I  &mt RCTRL O
-    &kp Q       &mt LCTRL Z       &kp X       &kp C       &kp D       &kp V           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
+                &mt LGUI Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Z       &kp LS(COMMA)
+                &mt LCTRL A  &mt LALT R  &mt LGUI S &mt LSHFT T &kp G           &kp M       &mt RSHFT N &mt RGUI E &mt RALT I  &mt RCTRL O
+    &kp Q       &mt LCTRL Y       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
                                         &lt ADJ TAB   &lt SYM ESC   &lt SYM SPACE       &lt NAV RET   &lt SYM BSPC   &kp ESC
                         >;
                 };
@@ -104,8 +108,8 @@ label= "SYM"                               ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp LS(N1)    &kp LS(POUND)      &kp LS(N2)    &kp LS(N4)    &kp LS(N5)       &kp LS(N6)   &kp RA(N7)    &kp LS(N0)   &kp KP_SLASH     &kp LS(MINUS)       
-                &kp LBKT   &kp GRAVE      &kp RA(N8)   &kp LS(N8)      &kp RA(N5)          &kp RA(N6)  &kp LS(N9) &kp RA(N9) &kp LS(GRAVE)   &kp LS(RBKT) 
+                &kp LS(N1)    &kp LS(NUHS)      &kp LS(N2)    &kp LS(N4)    &kp LS(N5)       &kp LS(N6)   &kp RA(N7)    &kp LS(N0)   &kp KP_SLASH     &kp LS(MINUS)       
+                &kp RBKT   &kp GRAVE      &kp RA(N8)   &kp LS(N8)      &kp RA(N5)          &kp RA(N6)  &kp LS(N9) &kp RA(N9) &kp LS(GRAVE)   &kp LS(RBKT) 
     &trans      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp N6      &kp N7      &kp N8       &kp N9     &kp N0      &kp BSLH
                                         &trans      &trans        &trans         &mo ADJ      &kp DEL    &trans      
                         >;
