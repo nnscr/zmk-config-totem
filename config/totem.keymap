@@ -66,7 +66,7 @@
     behavior-tap-hold {
         quick-tap-ms = <200>;   // Time threshold for quick taps
         hold-tap-delay-ms = <0>; // Delay before hold behavior activates (0 means instant hold)
-        global-quick-tap = true; // Enables quick tap globally
+        global-quick-tap; // Enables quick tap globally
     };
 
         keymap {
