@@ -49,18 +49,24 @@
             };
     };
 
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp N2>
-                , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp G &kp I &kp F>
-                ;
-        };
+    // macros {
+    //     gif: gif {
+    //         label = "giphy";
+    //         compatible = "zmk,behavior-macro";
+    //         #binding-cells = <0>;
+    //         bindings
+    //             = <&macro_press &kp LSHFT>
+    //             , <&macro_tap &kp N2>
+    //             , <&macro_release &kp LSHFT>
+    //             , <&macro_tap &kp G &kp I &kp F>
+    //             ;
+    //     };
+    // };
+
+    behavior-tap-hold {
+        quick-tap-ms = <200>;   // Time threshold for quick taps
+        hold-tap-delay-ms = <0>; // Delay before hold behavior activates (0 means instant hold)
+        global-quick-tap = true; // Enables quick tap globally
     };
 
         keymap {
@@ -135,10 +141,10 @@ label= "NAVI"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp ESC     &bt BT_CLR  &kp UP      &kp EQUAL   &kp LBRC        &kp RBRC    &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_PLUS
-                &kp LSHFT   &kp LEFT    &kp DOWN    &kp RIGHT   &kp LBKT        &kp RBKT    &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp KP_MINUS
-    &trans      &kp DEL     &kp PG_UP   &kp CAPS    &kp PG_DN   &kp LPAR        &kp RPAR    &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp KP_MULTIPLY &trans      
-                                        &trans      &trans      &trans          &mo ADJ     &kp KP_N0   &trans      
+                &kp BSLH    &kp LS(N3)    &none    &kp HOME    &kp PG_UP        &kp UP      &kp RIGHT   &kp LBKT    &kp LS(LA(7))   &kp EQUAL
+                &kp APOS    &kp MINUS     &none    &kp END     &kp PG_DN        &kp C_MUTE  &kp LEFT    &kp UP      &kp RIGHT       &kp SEMI
+     &none      &none       &none         &none    &none       &none            &kp UP      &kp LEFT    &kp DOWN    &none           &kp NUHS    &none
+                                          &trans   &trans      &mo ADJ          &trans      &trans      &trans
                         >;
                 };
 
@@ -160,13 +166,19 @@ label= "ADJ"                               ;
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-
-                &sys_reset  &bt BT_CLR &out OUT_TOG &trans      &trans          &trans      &kp F7      &kp F8      &kp F9      &kp F12
-                &bootloader &bt BT_NXT  &trans      &trans      &trans          &trans      &kp F4      &kp F5      &kp F6      &kp F11  
-    &trans      &trans      &bt BT_PRV  &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans         
-                                        &trans      &trans      &trans          &trans      &trans      &trans      
+                &mt LALT Q  &mt LALT W   &none       &none       &none          &kp F1      &kp F2      &kp F3      &kp F4     &bootloader
+                &kp LA(N4)  &kp LA(N3)   &kp LA(N2)  &kp LA(N1)  &none          &kp F5      &kp F6      &kp F7      &kp F8     &bt BT_CLR
+    &none       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp LA(D) &kp LA(V)      &kp F9      &kp F10     &kp F11     &kp F12    &out OUT_TOG &trans
+                                        &trans      &trans      &trans          &trans      &trans      &trans
                         >;
                 };
+
+    //             &sys_reset  &bt BT_CLR &out OUT_TOG &trans      &trans          &trans      &kp F7      &kp F8      &kp F9      &kp F12
+    //             &bootloader &bt BT_NXT  &trans      &trans      &trans          &trans      &kp F4      &kp F5      &kp F6      &kp F11  
+    // &trans      &trans      &bt BT_PRV  &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans         
+    //                                     &trans      &trans      &trans          &trans      &trans      &trans      
+    //                     >;
+    //             };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
