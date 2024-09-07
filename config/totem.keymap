@@ -24,15 +24,15 @@
 #define TVP2 5
 
 &mt {
-  quick-tap-ms = <100>;
+  quick-tap-ms = <200>;
   global-quick-tap;
   flavor = "tap-preferred";
-  tapping-term-ms = <170>;
+  tapping-term-ms = <200>;
 };
 
 &lt {
   global-quick-tap;
-  quick-tap-ms = <100>;
+  quick-tap-ms = <200>;
 };
 
 / {
@@ -93,7 +93,7 @@ label= "BASE"                              ;
                 &mt LGUI Q       &kp W       &kp F       &kp P       &kp B           &kp J       &kp L       &kp U       &kp Z       &kp LS(COMMA)
                 &mt LCTRL A  &mt LALT R  &mt LGUI S &mt LSHFT T &kp G           &kp M       &mt RSHFT N &mt RGUI E &mt RALT I  &mt RCTRL O
     &kp Q       &mt LCTRL Y       &kp X       &kp C       &kp D       &kp V           &kp K       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
-                                        &lt ADJ TAB   &lt SYM ESC   &lt SYM SPACE       &lt NAV RET   &lt SYM BSPC   &kp ESC
+                                        &lt ADJ TAB   &lt SYM ESC   &lt SYM SPACE       &lt NAV RET   &lt NAV BSPC   &kp ESC
                         >;
                 };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
