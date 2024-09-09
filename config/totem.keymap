@@ -144,10 +144,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp NUBS  &kp LS(N3)  &none          &kp HOME  &kp PG_UP    &kp UP      &kp RIGHT  &kp LBKT  &kp LS(LA(7))  &kp EQUAL
-       &kp APOS  &kp MINUS   &none          &kp END   &kp PG_DN    &kp C_MUTE  &kp LEFT   &kp UP    &kp RIGHT      &kp SEMI
-&none  &none     &none       &none          &none     &none        &kp UP      &kp LEFT   &kp DOWN  &none          &kp NUHS   &none
-                             &kp LG(EQUAL)  &trans    &mo ADJ      &trans      &trans     &trans
+       &kp NUBS  &kp LS(N3)  &none          &kp HOME  &kp PG_UP    &kp UP    &kp RIGHT  &kp LBKT  &kp LS(LA(7))  &kp EQUAL
+       &kp APOS  &kp MINUS   &none          &kp END   &kp PG_DN    &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT      &kp SEMI
+&none  &none     &none       &none          &none     &none        &kp UP    &kp LEFT   &kp DOWN  &none          &kp NUHS   &none
+                             &kp LG(EQUAL)  &trans    &mo ADJ      &trans    &trans     &trans
             >;
         };
 
