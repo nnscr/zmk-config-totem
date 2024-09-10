@@ -91,19 +91,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &mt LGUI Q   &kp W       &kp F       &kp P        &kp B          &kp J      &kp L        &kp U       &kp Z       &kp LS(COMMA)
-           &mt LCTRL A  &mt LALT R  &mt LGUI S  &mt LSHFT T  &kp G          &kp M      &mt RSHFT N  &mt RGUI E  &mt RALT I  &mt RCTRL O
-&kp LSHFT  &mt LCTRL Y  &kp X       &kp C       &kp D        &kp V          &kp K      &kp H        &kp COMMA   &kp DOT     &kp FSLH       &kp BSLH
-                                    &lt 4 TAB   &lt 2 ESC    &lt 2 SPACE    &lt 3 RET  &lt 3 BSPC   &kp ESC
+           &mt LGUI Q   &kp W       &kp F       &kp P        &kp B          &kp J      &kp L        &kp U           &kp Z       &kp LS(COMMA)
+           &mt LCTRL A  &mt LALT R  &mt LGUI S  &mt LSHFT T  &kp G          &kp M      &mt RSHFT N  &mt RGUI E      &mt RALT I  &mt RCTRL O
+&kp LSHFT  &mt LCTRL Y  &kp X       &kp C       &kp D        &kp V          &kp K      &kp H        &kp COMMA       &kp DOT     &kp FSLH       &kp BSLH
+                                    &lt 4 TAB   &lt 2 ESC    &lt 2 SPACE    &lt 3 RET  &lt 3 BSPC   &kp LEFT_SHIFT
             >;
         };
 
         qwerty {
             bindings = <
-        &kp Q  &kp W  &kp E   &kp R         &kp T          &kp Y      &kp U            &kp I      &kp P    &kp SEMI
-        &kp A  &kp S  &kp D   &kp F         &kp G          &kp H      &kp J            &kp K      &kp L    &kp SEMI
-&trans  &kp Z  &kp X  &kp C   &kp V         &kp B          &kp N      &kp M            &kp COMMA  &kp DOT  &kp MINUS  &trans
-                      &trans  &lt 2 ESCAPE  &lt 2 SPACE    &lt 3 RET  &lt 3 BACKSPACE  &trans
+        &kp Q        &kp W           &kp E           &kp R             &kp T          &kp Y      &kp U            &kp I       &kp P            &kp LBKT
+        &mt LCTRL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G          &kp H      &mt RSHFT J      &mt RGUI K  &mt RIGHT_ALT L  &mt RCTRL SEMI
+&trans  &kp Z        &kp X           &kp C           &kp V             &kp B          &kp N      &kp M            &kp COMMA   &kp DOT          &trans          &trans
+                                     &trans          &lt 2 ESCAPE      &lt 2 SPACE    &lt 3 RET  &lt 3 BACKSPACE  &trans
             >;
         };
 
