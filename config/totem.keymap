@@ -91,9 +91,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &mt LGUI Q   &kp W       &kp F       &kp P        &kp B          &kp J      &kp L        &kp U           &kp Z       &kp LS(COMMA)
+           &mt LGUI Q   &kp W       &kp F       &kp P        &kp B          &kp J      &kp L        &kp U           &kp Z       &kp LS(DOT)
            &mt LCTRL A  &mt LALT R  &mt LGUI S  &mt LSHFT T  &kp G          &kp M      &mt RSHFT N  &mt RGUI E      &mt RALT I  &mt RCTRL O
-&kp LSHFT  &mt LCTRL Y  &kp X       &kp C       &kp D        &kp V          &kp K      &kp H        &kp COMMA       &kp DOT     &kp FSLH       &kp BSLH
+&kp LSHFT  &mt LCTRL Y  &kp X       &kp C       &kp D        &kp V          &kp K      &kp H        &kp COMMA       &kp DOT     &kp FSLH     &kp BSLH
                                     &lt 4 TAB   &lt 2 ESC    &lt 2 SPACE    &lt 3 RET  &lt 3 BSPC   &kp LEFT_SHIFT
             >;
         };
