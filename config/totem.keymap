@@ -32,7 +32,7 @@
 &lt {
     global-quick-tap;
     quick-tap-ms = <200>;
-    require-prior-idle-ms = <0>;
+    require-prior-idle-ms = <1>;
 };
 
 / {
