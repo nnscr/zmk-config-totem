@@ -92,10 +92,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &mt LGUI Q   &kp W       &kp F       &kp P        &kp B          &kp J      &kp L        &kp U           &kp Z       &kp LS(DOT)
-           &mt LCTRL A  &mt LALT R  &mt LGUI S  &mt LSHFT T  &kp G          &kp M      &mt RSHFT N  &mt RGUI E      &mt RALT I  &mt RCTRL O
-&kp LSHFT  &mt LCTRL Y  &kp X       &kp C       &kp D        &kp V          &kp K      &kp H        &kp COMMA       &kp DOT     &kp FSLH     &kp BSLH
-                                    &lt 4 TAB   &lt 2 ESC    &lt 2 SPACE    &lt 3 RET  &lt 3 BSPC   &kp LEFT_SHIFT
+           &mt LGUI Q   &kp W  &kp F      &kp P      &kp B          &kp J      &kp L       &kp U           &kp Z    &kp Y
+           &kp A        &kp R  &kp S      &kp T      &kp G          &kp M      &kp N       &kp E           &kp I    &kp O
+&kp LSHFT  &kp LS(DOT)  &kp X  &kp C      &kp D      &kp V          &kp K      &kp H       &kp COMMA       &kp DOT  &kp FSLH  &kp BSLH
+                               &lt 4 TAB  &lt 5 ESC  &lt 2 SPACE    &lt 3 RET  &lt 5 BSPC  &kp LEFT_SHIFT
             >;
         };
 
@@ -177,6 +177,15 @@
        &kp LA(N4)    &kp LA(N3)    &kp LA(N2)    &kp LA(N1)  &none        &kp F5  &kp F6   &kp F7   &kp F8   &out OUT_BLE
 &to 0  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp LA(D)   &kp LA(V)    &kp F9  &kp F10  &kp F11  &kp F12  &out OUT_USB  &to 1
                                    &trans        &trans      &trans       &trans  &trans   &trans
+            >;
+        };
+
+        mods {
+            bindings = <
+        &trans     &trans        &trans        &trans          &trans    &trans  &trans           &trans         &trans         &trans
+        &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans    &trans  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_GUI  &kp RCTRL
+&trans  &trans     &trans        &trans        &trans          &trans    &trans  &trans           &trans         &trans         &trans     &trans
+                                 &trans        &trans          &trans    &trans  &trans           &trans
             >;
         };
     };
