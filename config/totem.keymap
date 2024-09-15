@@ -25,8 +25,8 @@
 &mt {
     quick-tap-ms = <200>;
     global-quick-tap;
-    flavor = "balanced";
-    tapping-term-ms = <170>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
 };
 
 &lt {
@@ -93,8 +93,8 @@
 
             bindings = <
            &mt LGUI Q   &kp W  &kp F      &kp P      &kp B          &kp J      &kp L       &kp U           &kp Z    &kp Y
-           &kp A        &kp R  &kp S      &kp T      &kp G          &kp M      &kp N       &kp E           &kp I    &kp O
-&kp LSHFT  &kp LS(DOT)  &kp X  &kp C      &kp D      &kp V          &kp K      &kp H       &kp COMMA       &kp DOT  &kp FSLH  &kp RSHIFT
+           &mt LCTRL A  &kp R  &kp S      &kp T      &kp G          &kp M      &kp N       &kp E           &kp I    &mt RCTRL O
+&kp LSHFT  &kp LS(DOT)  &kp X  &kp C      &kp D      &kp V          &kp K      &kp H       &kp COMMA       &kp DOT  &kp FSLH     &kp RSHIFT
                                &lt 4 TAB  &lt 5 ESC  &lt 2 SPACE    &lt 3 RET  &lt 5 BSPC  &kp LEFT_SHIFT
             >;
         };
