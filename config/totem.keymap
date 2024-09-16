@@ -125,10 +125,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LS(N1)  &kp LS(NUHS)  &kp LS(N2)  &kp LS(N4)  &kp LS(N5)    &kp LS(N6)  &kp RA(N7)  &kp LS(N0)  &kp KP_SLASH   &kp LS(MINUS)
-        &kp RBKT    &kp GRAVE     &kp RA(N8)  &kp LS(N8)  &kp RA(N5)    &kp N1      &kp N2      &kp N3      &kp N4         &kp N5 
-&trans  &kp LS(RBKT) &kp LS(GRAVE) &kp RA(N9) &kp LS(N9)  &kp RA(N6)    &kp N6      &kp N7      &kp N8      &kp N9         &kp N0         &kp BSLH
-                                  &trans      &trans      &trans        &mo 4       &kp DEL     &trans
+        &kp LS(N1)    &kp LS(NUHS)   &kp LS(N2)  &kp LS(N4)  &kp LS(N5)    &kp LS(N6)  &kp RA(N7)  &kp LS(N0)  &kp KP_SLASH  &kp LS(MINUS)
+        &kp RBKT      &kp GRAVE      &kp RA(N8)  &kp LS(N8)  &kp RA(N5)    &kp N0      &kp N1      &kp N2      &kp N3        &kp N4
+&trans  &kp LS(RBKT)  &kp LS(GRAVE)  &kp RA(N9)  &kp LS(N9)  &kp RA(N6)    &kp N5      &kp N6      &kp N7      &kp N8        &kp N9         &trans
+                                     &trans      &trans      &trans        &mo 4       &kp DEL     &trans
             >;
         };
 
@@ -149,10 +149,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp NUBS  &kp LS(N3)  &none          &kp HOME  &kp PG_UP    &kp DOWN  &kp RIGHT  &kp LBKT  &kp LS(LA(N7))  &kp EQUAL
-       &kp APOS  &kp MINUS   &none          &kp END   &kp PG_DN    &kp LEFT  &kp LEFT   &kp UP    &kp RIGHT       &kp SEMI
-&none  &none     &none       &none          &none     &none        &kp UP    &kp LEFT   &kp DOWN  &none           &kp NUHS   &none
-                             &kp LG(EQUAL)  &trans    &mo 4        &trans    &trans     &trans
+       &kp EQUAL  &kp LS(N3)  &none          &kp HOME  &kp PG_UP    &kp LS(MINUS)  &kp NUBS  &kp LBKT  &kp LS(LA(N7))  &kp LS(EQUAL)
+       &kp APOS   &kp MINUS   &none          &kp END   &kp PG_DN    &trans         &kp LEFT  &kp UP    &kp RIGHT       &kp SEMI
+&none  &none      &none       &none          &none     &none        &trans         &trans    &kp DOWN  &none           &kp NUHS       &none
+                              &kp LG(EQUAL)  &trans    &mo 4        &trans         &trans    &trans
             >;
         };
 
