@@ -182,10 +182,10 @@
 
         mods {
             bindings = <
-        &trans     &trans        &trans        &trans          &trans    &trans  &trans           &trans         &trans         &trans
-        &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans    &trans  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_GUI  &kp RCTRL
-&trans  &trans     &trans        &trans        &trans          &trans    &trans  &trans           &trans         &trans         &trans     &trans
-                                 &trans        &trans          &trans    &trans  &trans           &trans
+        &trans     &trans        &trans        &trans          &trans    &trans  &trans                &trans            &trans               &trans
+        &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans    &trans  &mt RIGHT_SHIFT LEFT  &mt RIGHT_ALT UP  &mt RIGHT_GUI RIGHT  &kp RCTRL
+&trans  &trans     &trans        &trans        &trans          &trans    &trans  &trans                &kp DOWN          &trans               &trans     &trans
+                                 &trans        &trans          &trans    &trans  &trans                &trans
             >;
         };
     };
