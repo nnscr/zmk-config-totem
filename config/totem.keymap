@@ -31,8 +31,8 @@
 
 &lt {
     quick-tap-ms = <200>;
-    require-prior-idle-ms = <100>;
-    flavor = "balanced";
+    require-prior-idle-ms = <130>;
+    flavor = "tap-preferred";
 };
 
 / {
