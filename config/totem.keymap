@@ -149,10 +149,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp EQUAL   &kp LS(N3)  &kp C_VOL_UP   &kp HOME          &kp PG_UP      &kp LS(MINUS)  &kp NUBS  &kp LBKT  &kp LS(LA(N7))  &kp LS(EQUAL)
-       &kp APOS    &kp MINUS   &kp C_MUTE     &kp END           &kp PG_DN      &none          &kp LEFT  &kp UP    &kp RIGHT       &kp SEMI
-&none  &kp C_PREV  &kp C_NEXT  &kp C_VOL_DN   &kp C_PLAY_PAUSE  &none          &none          &kp NUHS  &kp DOWN  &none           &trans         &none
-                               &kp LG(EQUAL)  &trans            &lt 4 SPACE    &trans         &trans    &trans
+       &kp EQUAL   &kp LS(N3)  &kp C_VOL_UP   &kp HOME          &kp PG_UP      &kp LS(MINUS)  &kp GRAVE  &kp LBKT  &kp LS(LA(N7))  &kp LS(EQUAL)
+       &kp APOS    &kp MINUS   &kp C_MUTE     &kp END           &kp PG_DN      &none          &kp LEFT   &kp UP    &kp RIGHT       &kp SEMI
+&none  &kp C_PREV  &kp C_NEXT  &kp C_VOL_DN   &kp C_PLAY_PAUSE  &none          &none          &kp NUHS   &kp DOWN  &none           &trans         &none
+                               &kp LG(EQUAL)  &trans            &lt 4 SPACE    &trans         &trans     &trans
             >;
         };
 
