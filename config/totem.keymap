@@ -70,7 +70,34 @@
     //     global-quick-tap; // Enables quick tap globally
     // };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        ar {
+            bindings = <&kp APOS>;
+            key-positions = <10 11>;
+            layers = <0>;
+            timeout-ms = <20>;
+        };
+
+        oi {
+            bindings = <&kp SEMI>;
+            key-positions = <19 18>;
+            layers = <0>;
+        };
+
+        rs {
+            bindings = <&kp MINUS>;
+            key-positions = <11 12>;
+            layers = <0>;
+        };
+
+        uy {
+            bindings = <&kp LBKT>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
