@@ -152,6 +152,27 @@
             timeout-ms = <20>;
             layers = <0>;
         };
+
+        yz_slash {
+            bindings = <&kp LS(N7)>;
+            key-positions = <8 9>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
+        jl_qmark {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <5 6>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
+        st_sticky_sym {
+            bindings = <&sl 2>;
+            key-positions = <12 13>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
     };
 
     keymap {
