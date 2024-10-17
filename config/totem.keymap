@@ -73,28 +73,43 @@
     combos {
         compatible = "zmk,combos";
 
-        ar {
+        ar_ae {
             bindings = <&kp APOS>;
             key-positions = <10 11>;
             layers = <0>;
             timeout-ms = <20>;
         };
 
-        oi {
+        oi_oe {
             bindings = <&kp SEMI>;
             key-positions = <19 18>;
             layers = <0>;
+            timeout-ms = <20>;
         };
 
-        rs {
+        rs_sz {
             bindings = <&kp MINUS>;
             key-positions = <11 12>;
             layers = <0>;
+            timeout-ms = <20>;
         };
 
-        uy {
+        uy_ue {
             bindings = <&kp LBKT>;
             key-positions = <7 8>;
+            layers = <0>;
+            timeout-ms = <20>;
+        };
+
+        fp_dollar {
+            bindings = <&kp LS(N4)>;
+            key-positions = <2 3>;
+        };
+
+        lu_circ {
+            bindings = <&kp NON_US_BSLH>;
+            key-positions = <6 7>;
+            timeout-ms = <20>;
             layers = <0>;
         };
     };
