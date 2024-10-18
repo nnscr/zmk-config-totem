@@ -108,13 +108,6 @@
             layers = <0>;
         };
 
-        lu_circ {
-            bindings = <&kp NON_US_BSLH>;
-            key-positions = <6 7>;
-            timeout-ms = <20>;
-            layers = <0>;
-        };
-
         nei_return {
             bindings = <&kp RETURN>;
             key-positions = <16 17 18>;
@@ -157,20 +150,6 @@
             layers = <0>;
         };
 
-        yz_slash {
-            bindings = <&kp LS(N7)>;
-            key-positions = <8 9>;
-            timeout-ms = <20>;
-            layers = <0>;
-        };
-
-        jl_qmark {
-            bindings = <&kp LS(MINUS)>;
-            key-positions = <5 6>;
-            timeout-ms = <20>;
-            layers = <0>;
-        };
-
         st_sticky_sym {
             bindings = <&sl 2>;
             key-positions = <12 13>;
@@ -184,6 +163,28 @@
             timeout-ms = <20>;
             layers = <0>;
         };
+
+        jl_circ {
+            bindings = <&kp NON_US_BSLH>;
+            key-positions = <5 6>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
+        lu_slash {
+            bindings = <&kp LS(N7)>;
+            key-positions = <6 7>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
+        yz_qmark {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <8 9>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
     };
 
     keymap {
