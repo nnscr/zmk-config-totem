@@ -185,6 +185,12 @@
             layers = <0>;
         };
 
+        colonx_asterisk {
+            bindings = <&kp LS(RBKT)>;
+            key-positions = <21 22>;
+            layers = <0>;
+            timeout-ms = <50>;
+        };
     };
 
     keymap {
