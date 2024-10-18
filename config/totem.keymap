@@ -104,6 +104,8 @@
         fp_dollar {
             bindings = <&kp LS(N4)>;
             key-positions = <2 3>;
+            timeout-ms = <20>;
+            layers = <0>;
         };
 
         lu_circ {
@@ -117,12 +119,14 @@
             bindings = <&kp RETURN>;
             key-positions = <16 17 18>;
             timeout-ms = <20>;
+            layers = <0>;
         };
 
         c,._semi {
             bindings = <&kp LS(COMMA)>;
             key-positions = <29 28>;
             timeout-ms = <20>;
+            layers = <0>;
         };
 
         pb_quote {
@@ -170,6 +174,13 @@
         st_sticky_sym {
             bindings = <&sl 2>;
             key-positions = <12 13>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
+        ie_equals {
+            bindings = <&kp LS(N0)>;
+            key-positions = <17 18>;
             timeout-ms = <20>;
             layers = <0>;
         };
