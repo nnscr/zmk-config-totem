@@ -204,6 +204,13 @@
             require-prior-idle-ms = <200>;
             layers = <0>;
         };
+
+        ne_qmark {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <16 17>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
     };
 
     keymap {
