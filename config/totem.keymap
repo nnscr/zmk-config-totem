@@ -211,6 +211,14 @@
             timeout-ms = <20>;
             layers = <0>;
         };
+
+        at_ae {
+            bindings = <&kp APOS>;
+            key-positions = <10 13>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
     };
 
     keymap {
