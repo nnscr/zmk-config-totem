@@ -35,6 +35,8 @@
     flavor = "tap-preferred";
 };
 
+&sk { quick-release; };
+
 / {
     // combos {
     //     compatible = "zmk,combos";
