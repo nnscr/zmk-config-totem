@@ -221,6 +221,13 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
+
+        no_oe {
+            bindings = <&kp SEMI>;
+            key-positions = <16 19>;
+            timeout-ms = <25>;
+            layers = <0>;
+        };
     };
 
     keymap {
