@@ -31,8 +31,9 @@
 
 &lt {
     quick-tap-ms = <200>;
-    require-prior-idle-ms = <130>;
+    require-prior-idle-ms = <100>;
     flavor = "tap-preferred";
+    tapping-term-ms = <100>;
 };
 
 &sk { quick-release; };
