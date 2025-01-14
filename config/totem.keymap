@@ -113,10 +113,10 @@
             layers = <0>;
         };
 
-        nei_return {
-            bindings = <&kp RETURN>;
+        nei_qmark {
+            bindings = <&kp LS(MINUS)>;
             key-positions = <16 17 18>;
-            timeout-ms = <20>;
+            timeout-ms = <40>;
             layers = <0>;
         };
 
@@ -227,6 +227,13 @@
             bindings = <&kp SEMI>;
             key-positions = <16 19>;
             timeout-ms = <25>;
+            layers = <0>;
+        };
+
+        rst_excl {
+            bindings = <&kp LS(N1)>;
+            key-positions = <11 12 13>;
+            timeout-ms = <40>;
             layers = <0>;
         };
     };
